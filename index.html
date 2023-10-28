@@ -10,19 +10,20 @@
             text-align: center;
         }
 
-        h1 {
+        h2 {
             color: white;
-            font-size: 48px;
-            margin-top: 200px;
+            font-size: 36px;
+            margin-top: 150px;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
 
         .fade-in {
-            animation: fadeIn 2s ease 3s forwards;
+            animation: fadeIn 4s ease 1s forwards;
             color: white;
-            font-size: 48px;
+            font-size: 36px;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
             opacity: 0;
+            margin-top: 10px;
         }
 
         @keyframes fadeIn {
@@ -34,25 +35,44 @@
             }
         }
 
-        audio {
-            display: none;
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 24px;
+            background-color: lightgrey;
+            color: black;
+            border: none;
+            cursor: pointer;
+            transition: opacity 0.5s;
+            position: fixed;
+            top: 200px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 10px; /* Adding border-radius to round the corners */
         }
     </style>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const audio = new Audio('outro.mp3');
-            const fadeinElement = document.querySelector('.fade-in');
+            const button = document.createElement('button');
+            const h2 = document.querySelector('h2');
 
-            fadeinElement.addEventListener('animationend', function () {
+            button.textContent = 'Guess';
+            button.addEventListener('click', function () {
                 audio.play();
+                button.style.opacity = 0;
+                const fadeinElement = document.createElement('p');
+                fadeinElement.className = 'fade-in';
+                fadeinElement.textContent = 'I do!';
+                h2.insertAdjacentElement('afterend', fadeinElement);
             });
+            document.body.appendChild(button);
         });
     </script>
 </head>
 
 <body>
-    <h1>Guess who has a website?</h1>
-    <p class="fade-in">I do!</p>
+    <h2>Guess who has a website!</h2>
 </body>
 
 </html>
