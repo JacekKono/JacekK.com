@@ -33,13 +33,26 @@
                 opacity: 1;
             }
         }
+
+        audio {
+            display: none;
+        }
     </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const audio = new Audio('outro.mp3');
+            const fadeinElement = document.querySelector('.fade-in');
+
+            fadeinElement.addEventListener('animationend', function () {
+                audio.play();
+            });
+        });
+    </script>
 </head>
 
 <body>
     <h1>Do you have a website?</h1>
     <p class="fade-in">I do!</p>
-	<Audio autoplay="" src="./outro.mp3"></audio>
 </body>
 
 </html>
