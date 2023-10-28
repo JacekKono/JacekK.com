@@ -4,7 +4,7 @@
 <head>
     <style>
         body {
-            background-image: url('https://th.bing.com/th/id/R.ca427008e1f3f48a702f72e3a0a1615d?rik=mrN9qmOO34Wi4Q&riu=http%3a%2f%2fwww.truthinsideofyou.org%2fwp-content%2fuploads%2f2014%2f05%2fStars-Space1.jpg&ehk=yHeDPEGmZbtT5PSOcBiceaaj4sYvP6O%2b1jJKxt7c7RM%3d&risl=&pid=ImgRaw&r=0'); /* Replace with your image URL */
+            background-image: url('https://th.bing.com/th/id/R.ca427008e1f3f48a702f72e3a0a1615d?rik=mrN9qmOO34Wi4Q&riu=http%3a%2f%2fwww.truthinsideofyou.org%2fwp-content%2fuploads%2f2014%2f05%2fStars-Space1.jpg&ehk=yHeDPEGmZbtT5PSOcBiceaaj4sYvP6O%2b1jJKxt7c7RM%3d&risl=&pid=ImgRaw&r=0g'); /* Replace with your image URL */
             background-size: cover;
             background-attachment: fixed;
             text-align: center;
@@ -16,11 +16,29 @@
             margin-top: 200px;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
+
+        .fade-in {
+            animation: fadeIn 2s ease 3s forwards; /* Animation to fade in after 3 seconds */
+            color: white;
+            font-size: 48px; /* Same font size as the previous text */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            opacity: 0; /* Initially set opacity to 0 */
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <h1>Guess who has a website?</h1>
+    <h1>Do you have a website?</h1>
+    <p class="fade-in">Well I do!</p>
 </body>
 
 </html>
