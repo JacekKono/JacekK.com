@@ -1,0 +1,28 @@
+#ProjectsDiv {
+    display: block;
+    position: relative;
+    top: 130px;
+    background-color: lightgrey;
+    height: 500px;
+    width: 90vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    border: solid black 1.75px;
+    border-radius: 15px;
+    overflow-x: clip;
+    overflow-y: scroll;
+}
+#ProjectsHeaderDiv {
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    background-color:rgb(40, 40, 40); 
+   
+}
+.ProjectsHeaderTxt {
+    font-family: Arial;
+    align-self: center;
+    color: white;
+    text-align:center;
+    margin-top: 5px;
+}
