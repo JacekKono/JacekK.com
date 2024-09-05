@@ -1,565 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coach Hage's Celebration of Life</title>
-    <link rel="icon" href="https://sb45storage.blob.core.windows.net/pub/themes/Cobb/styles/pimg/favicon.ico">
+<html>
+    <head>
+        <title>Big STEM Projects UNG - HOME</title>
+        <link rel="Stylesheet" href="index.css">
+        <link rel="Stylesheet" href="common.css">
+        <link rel="icon" type="image/x-icon" href="UNG Big Stem Projects Club Icon.png">
+    </head>
 
-    <style>
-        /*Page Layout*/
-        body {
-            background-color:whitesmoke;
-            display: block;
-            display: flex;
-        }
+    <body>
 
-        #masterContainer {
-            background-color:;
-            width:100%;
-            display:flex;
-            aspect-ratio: ;
-        }
+        <!-- NAVIGATION BAR -------------------------- -->
 
-        #headerDiv {
-            position: fixed;
-            background-color: white;
-            width: calc(100vw + 10px);
-            height: 60px;
-            margin-top: -10px;
-            margin-left: -10px;
-            outline-width: 1px;
-            outline-color: lightgrey;
-            outline-style: double;
-            overflow: hidden;
-            display: inline-flex;
-        }
-
-        #bodyContDiv {
-            margin-top: 60px;
-            display: inline-block;
-            flex-wrap: wrap;
-            max-width: 65vw;
-            background-color:;
-            border-radius:5px;
-            overflow: hidden;
-            background-color: ;
-            flex-grow: 1;
-        }
-
-        #otherContentContDiv {
-            margin-left: 5px;
-            margin-top: 60px;
-            background-color:;
-            flex-grow: 1;
-            flex-wrap: wrap;
-            display: inline-flex;
-            height:calc(55vw*108/192);
-            max-width:32.5vw;
-            overflow: hidden;
-        }
-
-        .defFont {
-            font-family: Arial, Helvetica, sans-serif;
-            margin-left: 15px;
-            font-size: 20px;
-            font-weight:bold;
-            color: black;
-            margin-left:10px;
-        }
-
-        /*Header*/
-        #CCSDLogoDiv {
-            display: inline;
-        }
-
-        #CCSDLogo {
-            display: block;
-            position: inherit;
-            height: 100%;
-            margin-left: 15px;
-            margin-right: 10px;
-        }
-
-        #pageTitleDiv {
-            margin-left: 20px;
-            height: 100%;
-            min-width: 500px;
-            flex-grow: 1;
-            background-color: white;
-        }
-
-        #pageTitle {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 20px;
-            font-weight: bold;
-        }
-
-
-        /*VideoPlayer*/
-        #videoPlayerDiv {
-            overflow: hidden;
-            background-color: black;
-            display: inline-block;
-            width:100%;
-            aspect-ratio: 192/108;
-            border-radius:;
-        }
-
-        #slideshow {
-            display: none;
-        }
-
-        #messagesToTheFamily {
-            position: inherit;
-            height: 100%;
-        }
-
-
-
-        /*Chapter Select*/
-        #chaptersDiv {
-            width: 100%;
-            overflow-x: scroll;
-            overflow-y: hidden;
-            white-space: nowrap;
-            max-width: 1920px;
-            margin-top:5px;
-            background-color:;
-        }
-
-        #lMChaptersDiv {
-            width: 100%;
-            overflow-x: scroll;
-            overflow-y: hidden;
-            white-space: nowrap;
-            max-width: 1920px;
-            margin-top:5px;
-            background-color:;
-            display:none;
-        }
-
-        .chapters {
-            width: 20vw;
-            aspect-ratio: 192/108;+
-            background-color: grey;
-            display: inline-block;
-            overflow: hidden;
-            position: relative;
-            border-radius: 5px;
-        }
-        .chapters :hover {
-            cursor:pointer;
-        }
-
-        .chapterTitle {
-            display: none;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            color: ;
-            padding: 5px;
-            text-align: center;
-            z-index: 2;
-            font-size: 25px;
-        }
-
-        .thumbnails {
-            position: inherit;
-            height: 100%;
-            z-index: 1;
-        }
-
-        #chapterSelTitle{
-            position:;
-            background-color: ;
-            width: 100%;
-            align-content: center;
-            height: 50px;
-        }
-
-        /*Other Content Buttons*/
-        #slideShowButton {
-            display: block;
-            height: 46.2%;
-            margin: 0 auto;
-            width: 100%;
-            overflow:hidden;
-            outline-width: 1px;
-            outline-color: lightgrey;
-            outline-style: double;
-        }
-
-        #messagesToTheFamilyButton {
-            display: none;
-            background-color: ;
-            height: 46.2%;
-            margin: 0 auto;
-            width: 100%;
-            overflow:hidden;
-            outline-width: 1px;
-            outline-color: lightgrey;
-            outline-style: double;
-        }
-
-        #liveMemorialButton {
-            display: block;
-            background-color:;
-            height: 46.2%;
-            margin: 0 auto;
-            width: 100%;
-            overflow:hidden;
-            outline-width: 1px;
-            outline-color: lightgrey;
-            outline-style: double;
-        }
-
-        .button :hover {
-            cursor: pointer;
-        }
-
-        .defFontDiv{
-            width: 100%;
-            height:10%;
-            background-color:;
-            align-content: center;
-            background-color;
-
-        }
-
-        .buttonThumbnailDiv {
-            position: inherit;
-            flex-grow:1;
-            aspect-ratio: 192/108;
-            background-color: grey;
-            max-height: 40%;
-            display: block;
-            margin:0 auto;
+        <header class="navigationBar">
             
-        }
+            <div id="logodiv"> 
+                <img id="logoImg" src="UNG Big Stem Projects Club Icon.png" alt="">
+            </div>
 
-        .buttonHeader {
-            align-content: center;
-            width: 100%;
-            height:50px;
-            background-color:;
-        }
+            <div id="websiteTitleDiv">
+                <p id="websiteTitle"> Big STEM Projects
+                </p>
+            </div>
 
-        .buttonPreview {
-            width:50%;
-            aspect-ratio: 192/108;
-            background-color: black;
-            margin-top:7.5px;
-            margin-left:7.5px;
-            display: block;
-        }
+            <div id="menuButtonDiv">
+                <img id="menuButtonImg" src="three line icon.PNG" alt="">
+                <img id="menuExitButtonImg" src="X icon.png" alt="">
+            </div>
 
-        .bthumbnails {
-            position:inherit;
-            width:100%;
-            margin-bottom: -5px;
-        }
-    </style>
+        </header>
 
-</head>
-<body>
-    <!---->
-    <div id="headerDiv">
-        <div id="CCSDLogoDiv">
-            <img src="https://oneringnetworks.com/wp-content/uploads/2014/01/cobb-county-schools_logo.jpg" id="CCSDLogo">
+
+        <!-- MENU ------------------------------------ -->
+
+
+        <div id="menuDiv">
+            <nav>
+                <a href="projects.html" style="text-decoration: none">
+                    <div class="otherPages">
+                        <p class="otherPagesText">
+                            Projects
+                        </p>
+                    </div>
+                </a>
+            </nav>
+            <nav>
+                <a href="events.html" style="text-decoration: none">
+                    <div class="otherPages">
+                        <p class="otherPagesText">
+                            Events
+                        </p>
+                    </div>
+                </a>
+            </nav>
+            <nav>
+                <a href="OurTeam.html" style="text-decoration: none">
+                    <div class="otherPages">
+                        <p class="otherPagesText">
+                            Our Team
+                        </p>
+                    </div>
+                </a>
+            </nav>
         </div>
+
+        <!--HomePAGE ----------------------------->
+
         <div id="pageTitleDiv">
-            <p id="pageTitle">Coach Hage's Celebration of Life</p>
-        </div>
-    </div>
-    <div id="masterContainer">
-
-        <div id="bodyContDiv">
-
-            <div id="videoPlayerDiv">
-                <video src="Messages to the Family.mp4" id="messagesToTheFamily" controls></video>
-                <video src="HAGE Slideshow V5.mp4" id="slideShow" controls></video>
-                <video src="Coach Hage Live Memorial V2.mp4" id="liveMemorial" controls></video>
-            </div>
-
-            <div id="chapterSelTitle">  <p class="defFont">Chapter Select:</p></div>
-
-            <div id="chaptersDiv">
-                <div class="chapters" id="chapter1" onclick="skipToTime(1)">
-                    <div class="chapterTitle">Chapter 1</div>
-                    <video class="thumbnails" src="Messages to the Family.mp4#t=29.5" muted disablePictureInPicture></video>
-                </div>
-                <div class="chapters" onclick="skipToTime(53.5)">
-                    <video class="thumbnails" src="Messages to the Family.mp4#t=82.25" muted disablePictureInPicture></video>
-                </div>
-                <div class="chapters" onclick="skipToTime(104.5)">
-                    <video class="thumbnails" src="Messages to the Family.mp4#t=104.5" muted disablePictureInPicture></video>
-                </div>
-                <div class="chapters" onclick="skipToTime(158.5)">
-                    <video class="thumbnails" src="Messages to the Family.mp4#t=158.5" muted disablePictureInPicture></video>
-                </div>
-                <div class="chapters" onclick="skipToTime(174.5)">
-                    <video class="thumbnails"  src="Messages to the Family.mp4#t=174.5" muted disablePictureInPicture></video>
-                </div>
-                <div class="chapters" onclick="skipToTime(195)">
-                    <video class="thumbnails" src="Messages to the Family.mp4#t=195" muted disablePictureInPicture></video>
-                </div>
-                <div class="chapters" onclick="skipToTime(243.5)">
-                    <video class="thumbnails"  src="Messages to the Family.mp4#t=243.5" muted disablePictureInPicture></video>
-                </div>
-                <div class="chapters" onclick="skipToTime(278.5)">
-                    <video class="thumbnails" src="Messages to the Family.mp4#t=278.5" muted disablePictureInPicture></video>
-                </div>
-                <div class="chapters" onclick="skipToTime(351.5)">
-                    <video class="thumbnails" src="Messages to the Family.mp4#t=351.5" muted disablePictureInPicture></video>
-                </div>
-                <div class="chapters" onclick="skipToTime(394.5)">
-                    <video class="thumbnails" src="Messages to the Family.mp4#t=394.5" muted disablePictureInPicture></video>
-                </div>
-            </div>
-            <div id="lMChaptersDiv">
-                <div class="chapters" id="chapter1" onclick="lMSkipToTime(1)">
-                    <video class="thumbnails" id="thumbnail1" src="Coach Hage Live Memorial V2.mp4#t=40" muted disablePictureInPicture></video>
-                </div>
-                <div class="chapters" id="chapter1" onclick="lMSkipToTime(93)">
-                    <video class="thumbnails" id="thumbnail1" src="Coach Hage Live Memorial V2.mp4#t=103" muted disablePictureInPicture></video>
-                </div>
-                <div class="chapters" id="chapter1" onclick="lMSkipToTime(335)">
-                    <video class="thumbnails" id="thumbnail1" src="Coach Hage Live Memorial V2.mp4#t=390" muted disablePictureInPicture></video>
-                </div>
-                <div class="chapters" id="chapter1" onclick="lMSkipToTime(687)">
-                    <video class="thumbnails" id="thumbnail1" src="Coach Hage Live Memorial V2.mp4#t=700" muted disablePictureInPicture></video>
-                </div>
-                <div class="chapters" id="chapter1" onclick="lMSkipToTime(1240)">
-                    <video class="thumbnails" id="thumbnail1" src="Coach Hage Live Memorial V2.mp4#t=1247" muted disablePictureInPicture></video>
-                </div>
-                <div class="chapters" id="chapter1" onclick="lMSkipToTime(2013)">
-                    <video class="thumbnails" id="thumbnail1" src="Coach Hage Live Memorial V2.mp4#t=2023" muted disablePictureInPicture></video>
-                </div>
-                <div class="chapters" id="chapter1" onclick="lMSkipToTime(2472)">
-                    <video class="thumbnails" id="thumbnail1" src="Coach Hage Live Memorial V2.mp4#t=2490" muted disablePictureInPicture></video>
-                </div>
-                <div class="chapters" id="chapter1" onclick="lMSkipToTime(2768)">
-                    <video class="thumbnails" id="thumbnail1" src="Coach Hage Live Memorial V2.mp4#t=2798" muted disablePictureInPicture></video>
-                </div>
-                <div class="chapters" id="chapter1" onclick="lMSkipToTime(3615)">
-                    <video class="thumbnails" id="thumbnail1" src="Coach Hage Live Memorial V2.mp4#t=3655" muted disablePictureInPicture></video>
-                </div>
-                <div class="chapters" id="chapter1" onclick="lMSkipToTime(3922)">
-                    <video class="thumbnails" id="thumbnail1" src="Coach Hage Live Memorial V2.mp4#t=3952" muted disablePictureInPicture></video>
-                </div>
-                <div class="chapters" id="chapter1" onclick="lMSkipToTime(4450)">
-                    <video class="thumbnails" id="thumbnail1" src="Coach Hage Live Memorial V2.mp4#t=4470" muted disablePictureInPicture></video>
-                </div>
-                <div class="chapters" id="chapter1" onclick="lMSkipToTime(4816)">
-                    <video class="thumbnails" id="thumbnail1" src="Coach Hage Live Memorial V2.mp4#t=4836" muted disablePictureInPicture></video>
-                </div>
-                <div class="chapters" id="chapter1" onclick="lMSkipToTime(5035)">
-                    <video class="thumbnails" id="thumbnail1" src="Coach Hage Live Memorial V2.mp4#t=5070" muted disablePictureInPicture></video>
-                </div>
-                <div class="chapters" id="chapter1" onclick="lMSkipToTime(5680)">
-                    <video class="thumbnails" id="thumbnail1" src="Coach Hage Live Memorial V2.mp4#t=5705" muted disablePictureInPicture></video>
-                </div>
-                <div class="chapters" id="chapter1" onclick="lMSkipToTime(5960)">
-                    <video class="thumbnails" id="thumbnail1" src="Coach Hage Live Memorial V2.mp4#t=5980" muted disablePictureInPicture></video>
-                </div>
-                <div class="chapters" id="chapter1" onclick="lMSkipToTime(6920)">
-                    <video class="thumbnails" id="thumbnail1" src="Coach Hage Live Memorial V2.mp4#t=6930" muted disablePictureInPicture></video>
-                </div>
-                <div class="chapters" id="chapter1" onclick="lMSkipToTime(7658)">
-                    <video class="thumbnails" id="thumbnail1" src="Coach Hage Live Memorial V2.mp4#t=7678" muted disablePictureInPicture></video>
-                </div>
-                <div class="chapters" id="chapter1" onclick="lMSkipToTime(7658)">
-                    <video class="thumbnails" id="thumbnail1" src="Coach Hage Live Memorial V2.mp4#t=7705" muted disablePictureInPicture></video>
-                </div>
-                <div class="chapters" id="chapter1" onclick="lMSkipToTime(8083)">
-                    <video class="thumbnails" id="thumbnail1" src="Coach Hage Live Memorial V2.mp4#t=8093" muted disablePictureInPicture></video>
-                </div>
-                <div class="chapters" id="chapter1" onclick="lMSkipToTime(8453)">
-                    <video class="thumbnails" id="thumbnail1" src="Coach Hage Live Memorial V2.mp4#t=8463" muted disablePictureInPicture></video>
-                </div>
-                <div class="chapters" id="chapter1" onclick="lMSkipToTime(15769))">
-                    <video class="thumbnails" id="thumbnail1" src="Coach Hage Live Memorial V2.mp4#t=15769" muted disablePictureInPicture></video>
-                </div>
-
-            </div>
-
+            <h1 id="pageTitle">HOME</h1>
         </div>
 
-        <div id="otherContentContDiv">
-            <div class="defFontDiv"> <p class="defFont">Other Content:</p></div>
-            <div class="button" id="slideShowButton" onclick="swapElements()">
-                <div class="buttonHeader"><p class="defFont">Slideshow</p></div>
-                <div class="buttonPreview"><video class="bthumbnails" src="HAGE Slideshow V5.mp4#t=99" muted disablePictureInPicture></video></div>
-            </div>
-            <div class="button" id="messagesToTheFamilyButton" onclick="swapElements2()">
-                <div class="buttonHeader"><p class="defFont">Messages to the Family</p></div>
-                <div class="buttonPreview"><video class="bthumbnails" src="Messages to the Family.mp4#t=30" muted disablePictureInPicture></video></div>
-            </div>
-            <div class="button" id="liveMemorialButton" onclick="swapElements3()">
-                <div class="buttonHeader"><p class="defFont">Live Memorial</p></div>
-                <div class="buttonPreview"><video class="bthumbnails" src="Coach Hage Live Memorial V2.mp4#t=30" muted disablePictureInPicture></video></div>
-            </div>
-        </div>
 
-    </div>
+
+
+    </body>
 
     <script>
-        const messagesToTheFamily = document.getElementById('messagesToTheFamily');
-
-        function skipToTime(time) {
-            messagesToTheFamily.currentTime = time;
-        }
-
-        const liveMemorial = document.getElementById('liveMemorial');
-
-        function lMSkipToTime(time) {
-        liveMemorial.currentTime = time;
-        }
+        // Get the button and the hidden element
+        const menuButtonDiv = document.getElementById("menuButtonDiv");
+        const menuDiv = document.getElementById("menuDiv");
+        const menuButtonImg = document.getElementById("menuButtonImg");
+        const menuExitButtonImg = document.getElementById("menuExitButtonImg");
 
 
-        document.addEventListener("DOMContentLoaded", function () {
-            const chapters = document.querySelectorAll('.chapters video');
-            chapters.forEach((thumbnail) => {
-                thumbnail.playbackRate = 2;
+        // Add an event listener to the button
+        menuButtonDiv.addEventListener("click", function() {
+            // Toggle the display of the hidden element
+            if (menuDiv.style.display === "none") {
+                menuDiv.style.display = "inline-block";
+                menuDiv.style.height = "auto";
+                menuDiv.style.backgroundColor = "#abb9d4";
+                menuDiv.style.position = "fixed";
+                menuDiv.style.zIndex = "10";
+                menuDiv.style.right = "0px";
 
-                thumbnail.parentElement.addEventListener("mouseover", function () {
-                    thumbnail.play();
-                });
+            } else {
+                menuDiv.style.display = "none";
+            }
 
-                thumbnail.parentElement.addEventListener("mouseout", function () {
-                    thumbnail.pause();
-                    thumbnail.currentTime = thumbnail.getAttribute('src').split('#t=')[1];
-                });
+            if (menuButtonImg.style.display === "block") {
+                menuButtonImg.style.display = "none";
+                
+            } else {
+                menuButtonImg.style.display = "block";
+                menuButtonImg.style.height = "50%";
+                menuButtonImg.style.justifyItems = "center";
+                menuButtonImg.style.marginLeft = "auto";
+                menuButtonImg.style.margin.right = "2vw";
+                
+            }
 
-                thumbnail.addEventListener("ended", function () {
-                    thumbnail.currentTime = thumbnail.getAttribute('src').split('#t=')[1];
-                });
-            });
-
-            const bthumbnails = document.querySelectorAll('.bthumbnails');
-            bthumbnails.forEach((thumbnail) => {
-                thumbnail.playbackRate = 5;
-
-                thumbnail.parentElement.addEventListener("mouseover", function () {
-                    thumbnail.play();
-                });
-
-                thumbnail.parentElement.addEventListener("mouseout", function () {
-                    thumbnail.pause();
-                    thumbnail.currentTime = thumbnail.getAttribute('src').split('#t=')[1];
-                });
-
-                thumbnail.addEventListener("ended", function () {
-                    thumbnail.currentTime = thumbnail.getAttribute('src').split('#t=')[1];
-                });
-            });
+            if (menuExitButtonImg.style.display === "none") {
+                menuExitButtonImg.style.display = "block";
+                menuExitButtonImg.style.height = "50%";
+                menuExitButtonImg.style.justifyItems = "center";
+                menuExitButtonImg.style.marginLeft = "auto";
+                menuExitButtonImg.style.marginRight = "2vw";
+                
+            } else {
+                menuExitButtonImg.style.display = "none";
+                
+            }
         });
-
-        //Other Content Button Functions
-        function swapElements() {
-            var messageToFamily = document.getElementById('messagesToTheFamily');
-            messageToFamily.pause();
-            messageToFamily.style.display = 'none';
-
-            var slideshow = document.getElementById('slideShow');
-            slideshow.style.display = 'block';
-            slideshow.style.height = '100%';
-            slideshow.style.position = 'inherit';
-            slideshow.play();
-
-            var liveMemorial = document.getElementById('liveMemorial');
-            liveMemorial.style.display = 'none';
-            liveMemorial.pause();
-
-            var chaptersDiv = document.getElementById('chaptersDiv');
-            chaptersDiv.style.display = 'none';
-
-            var slideShowButton = document.getElementById('slideShowButton');
-            slideShowButton.style.display = 'none';
-
-            var liveMemorialButton = document.getElementById('liveMemorialButton');
-            liveMemorialButton.style.display = 'block';
-
-            var messagesToTheFamilyButton = document.getElementById('messagesToTheFamilyButton');
-            messagesToTheFamilyButton.style.display = 'block';
-
-            var chapterSelTitle = document.getElementById('chapterSelTitle');
-            chapterSelTitle.style.display = 'none';
-
-            var lMChaptersDiv = document.getElementById('lMChaptersDiv');
-            lMChaptersDiv.style.display = 'none';
-        }
-
-        function swapElements2() {
-            var slideshow = document.getElementById('slideShow');
-            slideshow.pause();
-            slideshow.style.display = 'none';
-
-            var messagesToTheFamily = document.getElementById('messagesToTheFamily');
-            messagesToTheFamily.style.display = 'block';
-            messagesToTheFamily.style.height = '100%';
-            messagesToTheFamily.style.position = 'inherit';
-            messagesToTheFamily.play();
-
-            var liveMemorial = document.getElementById('liveMemorial');
-            liveMemorial.style.display = 'none';
-            liveMemorial.pause();
-
-            var chaptersDiv = document.getElementById('chaptersDiv');
-            chaptersDiv.style.display = 'block';
-
-            var lMChaptersDiv = document.getElementById('lMChaptersDiv');
-            lMChaptersDiv.style.display = 'none';
-
-            var slideShowButton = document.getElementById('slideShowButton');
-            slideShowButton.style.display = 'block';
-
-            var messagesToTheFamilyButton = document.getElementById('messagesToTheFamilyButton');
-            messagesToTheFamilyButton.style.display = 'none';
-
-            var liveMemorialButton = document.getElementById('liveMemorialButton');
-            liveMemorialButton.style.display = 'block';
-
-            var chapterSelTitle = document.getElementById('chapterSelTitle');
-            chapterSelTitle.style.display = 'block';
-        }
-
-        function swapElements3() {
-            var messagesToTheFamily = document.getElementById('messagesToTheFamily');
-            messagesToTheFamily.pause();
-            messagesToTheFamily.style.display = 'none';
-
-            var slideshow = document.getElementById('slideShow');
-            slideshow.pause();
-            slideshow.style.display = 'none';
-
-            var liveMemorial = document.getElementById('liveMemorial');
-            liveMemorial.style.display = 'block';
-            liveMemorial.style.height = '100%';
-            liveMemorial.style.position = 'inherit';
-            liveMemorial.play();
-
-            var chaptersDiv = document.getElementById('chaptersDiv');
-            chaptersDiv.style.display = 'none';
-
-            var slideShowButton = document.getElementById('slideShowButton');
-            slideShowButton.style.display = 'block';
-
-            var messagesToTheFamilyButton = document.getElementById('messagesToTheFamilyButton');
-            messagesToTheFamilyButton.style.display = 'block';
-
-            var liveMemorialButton = document.getElementById('liveMemorialButton');
-            liveMemorialButton.style.display = 'none';
-
-            var chapterSelTitle = document.getElementById('chapterSelTitle');
-            chapterSelTitle.style.display = 'block';
-
-            var lMChaptersDiv = document.getElementById('lMChaptersDiv');
-            lMChaptersDiv.style.display = 'block';
-        }
     </script>
-</body>
+
+    
 </html>
